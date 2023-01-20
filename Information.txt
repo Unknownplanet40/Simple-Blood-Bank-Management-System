@@ -1,0 +1,303 @@
+Authors 
+	Ryan James V. Capadocia
+	James Matthew Veloria
+	Nico Aldrich Cano
+	Joseph Contador 	
+	Jomari Bautista
+	Julian Bragaiz 
+	Cielo Besonia 		
+
+DCIT 24A Final Project - 1st Semester 2021-2022
+Blood Bank Management System (BBMS) - Web Application (PHP, MySQL)
+Created on December 5, 2022 at 10:30:20 PM.
+IDE Visual Studio Code, Sublime Text Editor
+
+VERY IMPORTANT NOTE TO REMEMBER BEFORE RUNNING THE PROJECT: 
+This Project 'NEED' a "INTERNET CONNECTION" to work properly. because we used CDN's, fonts, icons, image and other online resources. to make our project look better and more appealing.
+
+CDN means - Content Delivery Network. It is a system of distributed servers (network) that deliver pages and other web content to a user, based on the geographic locations of the user, the origin of the webpage and the content delivery server.
+
+******************************************************************************************************
+____________________________________________ ASSIGNED TASKS __________________________________________
+Name 				  	  Task
+Ryan James V. Capadocia	- Developer / Personal Page / Tester / Database
+James Matthew Veloria	- Developer / Tester / Personal Page / Layout
+Nico Aldrich Cano		- HomePage / Personal Page
+Joseph Contador			- Tester / Personal Page / icons
+Jomari Bautista			- Personal Page / Layout
+Julian Bragaiz			- HomePage / Personal Page
+Cielo Besonia			- Personal Page
+
+// not yet assigned
+flowchart / Users Data / Developer
+******************************************************************************************************
+Bootstrap 5.2.x
+jquery 3.6.1
+html 5
+css 3
+javascript 1.8.5
+php 8.1.12
+mysql 15.1
+
+Xampp 8.2.0
+Chrome 96.0.4664.45
+Microsoft Edge 96.0.1054.34
+Visual Studio Code 1.74.2
+Sublime Text Editor 4.0.0
+``````````````````````````````````````````````````````````````````````````````````````````````````````
+Our Database is hosted on phpMyAdmin
+Host: localhost
+Username: administrator
+Password: pwordfordb_bbm.2022
+Database: bloodbank_management
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Source's, References, Credits, Designs, and Tools used:
+
+Bootstrap: 					https://getbootstrap.com/docs/5.2/getting-started/introduction/
+Custom Alert: 				https://sweetalert2.github.io/#icons
+jquery:						https://cdnjs.com/libraries/jquery
+background animation: 		https://www.gradient-animator.com/
+					  		https://codepen.io/mohaiman/pen/MQqMyo
+Designs: 					https://freefrontend.com/
+Input Patterns: 			https://regexr.com/
+Sign in & Sign up Design: 	https://codepen.io/fghty/pen/PojKNEG?editors=1001
+Color gradient:				https://uigradients.com/#SinCityRed
+Error Design:				https://codepen.io/sarazond/pen/jOKyjZ
+							https://codepen.io/Unknownplanet40/pen/rNrxvmv
+Portfolio Designs
+Caps						https://www.youtube.com/watch?v=zSRUtRsSNv0
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Accounts for testing (Temporary Accounts)
+Admin:
+	name: Temp Admin Acc
+	Username: admin
+	Password: admin123
+staff:
+	name: Testing For Pending Page
+	Username: pendingtempacc
+	Password: pta123
+Users:
+	name: Testing for Declined Page
+	Username: declinedtempacc
+	Password: dta123
+-----------------------
+Other Account for Group mates:
+---------------------- Admins:
+Ryan
+	username: ryanjames2023
+	password: capadocia1302
+Julian
+	username: Julian2
+	password: Kelpahits6h
+----------------------- Staff:
+Jomari
+	username: jomjom69
+	password: pst696969
+Cielo:
+	username: Cielo15
+	password: ilovecats123
+----------------------- Users:
+James
+	username: JamesV123
+	password: veloria69
+Joseph
+	username: Joseph19
+	password: Pogi123
+Nico
+	username: aldrich28
+	password: Nico1234
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Total: 57
+Done: 57
+
+Progress: 100%
+[#####################################################################################################]
+10% DONE - December 26, 2022
+50% DONE - December 31, 2022
+71% DONE - January 1, 2022
+86% DONE - January 15, 2022
+100% DONE - January 20, 2022
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------------------------------------------------------------------------
+____________________________________________ DONE SO FAR _____________________________________________
+WEBPAGE 					STATUS 			NOTES
+Landing Page				[DONE]			[Updated]
+	Home 	 				/
+	About 					/
+	Login 					/				[FIXED]
+	Sign Up / Register		/ 				[FIXED]
+	Register for Staff		/				[FIXED]
+Portfolio Page				[DONE]
+	Caps					/				[Connected to database]
+	joseph					/				[No Data Given]
+	veloria					/				[Connected to database]
+	joms					/				[Connected to database]
+	cielo					/				[Connected to database]
+	julian					/				[Not connected to database]
+	nico					/				[Not connected to database]
+===========================================================[ UNIVERSAL ]
+Error Page					[DONE]			[Updated]
+Popup Alert Page			[DONE]			[Updated]
+Modal Page 					[DONE]			[Updated]
+===============================================================[ ADMIN ]
+Dashboard Page 				[DONE] 			[No UI]
+Blood Donation Page 		[DONE]
+	NewDonor 				/				[FIX REGEX]
+	DonorUpdate 			/				[FIX REGEX]
+	DonateBlood 			/				[FIXED]
+	Delete 					/
+Blood Inventory Page 		[DONE] 			[VIEW ONLY]
+Blood Request Page 			[DONE]
+	NewRequest 				/				[FIX REGEX][FIXED]
+	Approve 				/				[FIXED]
+	Denied					/
+	ReqDelete 				/
+blood Handed Page 			[DONE] 			[VIEW ONLY]
+Manage User Page 			[DONE]			[SOME BUGS]
+	Admin Page				[DONE]
+		Add					/
+		update				/
+		delete			 	/
+	Staff Page				[DONE]				
+		Add					/
+		update				/
+		delete			 	/
+		Approve				/
+		Denied				/
+	Other Users Page		[DONE]				
+		Add					/
+		update				/
+		delete			 	/
+Logout Page 				[DONE] 			[NO UI]
+===============================================================[ STAFF ]
+Dashboard Page 				[DONE]
+Staff Status Page			[DONE]
+Blood Donation Page			[DONE]
+	NewDonor 				/				[FIX REGEX]
+	DonorUpdate 			/				[FIX REGEX]
+	DonateBlood 			/
+Blood Inventory Page 		[DONE]
+Blood Request Page 			[DONE]
+	Approve 				/				
+	Denied					/
+blood Handed Page			[DONE]
+Manage User Page 			[DONE]
+	Staff Page				/				
+		Add					/
+		update				/
+		Approve				/
+		Denied				/
+	Other Users Page		/				[Fix some bugs]
+		Add					/
+		update				/
+Logout Page					[DONE]			[FIXED]
+===============================================================[ USERS ]
+Dashboard Page 				[DONE]
+Blood Donation Page			[DONE]
+	NewDonor 				/
+	DonateBlood 			/
+Blood Request Page			[DONE]
+	NewRequest 				/
+Blood Handed Page			[DONE]
+	Re-Request Page			/
+Profile Page				[DONE]
+	update profile			/
+Logout Page					[DONE]
+------------------------------------------------------------------------------------------------------
+__________________________________________ NEED TO FIX/ADD ___________________________________________
+Input Regex	
+Error Handling																					[DONE]
+Modal															 								
+Flickering																			  [Some are fixed]
+Separate the background animation from main css file											[DONE]
+Add new Request in Blood Request Page 															[DONE]
+Add data to homepage of how many blood donated and how many blood requested						
+Locations of the files need to have a better structure {50/50 kung gaganahan}
+Need to add a new page for the user to know if they are approved or not 						[DONE]
+Add option to Request blood again for user that have already approved
+Add Icon in Webpage that have UI			
+Fix password not showing in Staff_Users Page when updating										[DONE]			
+------------------------------------------------------------------------------------------------------
+__________________________________________ OPTIONAL TO ADD ___________________________________________
+Do i need to put confirmation in Delete? 														[???]
+separate the quarter of blood donated in blood donation page and add to compatible blood type	[???]
+add Encryption to our database																	[???]
+Add Forgot password button in Login Page														[???]
+------------------------------------------------------------------------------------------------------
+____________________________________________ CHANGE LOGS _____________________________________________
+== [ My change logs only began on December 29th so there are no other records of progress to date ] ==
+
+December 29, 2022 - Added function to separate the blood type for compatibility in blood request page
+				  - Created new Page for creating, updating, and deleting Users in Manage User Page 
+				  - Fixes some Bugs in Manage User Page
+				  - Created Staff_Status page for staff to know if they are approved or not
+
+December 30, 2022 - Created Error page for Connection Error plus some other errors
+				  - deleted old AlertBox function and replaced it with NewAlertBox function [sweetalert2]
+				  - Separate the background animation in css file for easy access and modification
+
+December 31, 2022 - Added Some Favorites Icon in Webpage that have UI
+				  - Added password to our database for security purposes
+
+January 1, 2023 - Created Staff Dashboard (Inventory to Mange User Page)
+				- Fix Log Out Button in Staff Dashboard (not setting is_login to 0)
+				- Fix Decline account update (not updating the page when isApproved is 2)
+
+January 2, 2023 - Fix user not updating blood group
+				- Added liters donated in blood Inventory Page in user dashboard
+				- added Name in the page title in user dashboard
+
+January 9, 2023 - Fix some bugs in Database Connection
+				- Added Staff Registration Page
+				- Fix Register Page
+				- Created Accounts for group mates to test the website (Ryan)
+
+January 10, 2023 - Fix hide password for Staff ser Manage Page in Staff Account
+				 - Fix search Bar in Admin dashboard (including non-admin users when searching)
+				 - Hide the Search Button for Admin User Manage Page
+
+January 13, 2023 - Added Staff Dashboard for Users Account
+				 - Fix search Bar in Staff dashboard (including other users when searching)
+
+January 14, 2023 - Fix some bugs in Admin Dashboard
+				 - Added Donated and Requested Blood card in Admin Inventory
+
+January 15, 2023 - Added Portfolio for Caps and Veloria
+				 - Fix some bugs in Staff Dashboard
+		
+January 16, 2023 - Fixed password not showing in admin manage page
+				 - Added Portfolio for Cielo and Jomari
+
+January 17, 2023 - Added User Dashboard
+				 - Added User Donation Page (New Donor, Donate Blood)
+				 - increased the unit of blood from 6 unit to 8 unit in blood donation page
+				 - Added User Portfolio for Joseph and Julian
+
+January 18, 2023 - Added HomePage for the website
+				 - fixed some alignment of text in HomePage
+				 - Added User Portfolio for Nico
+
+January 20, 2023 - Added User Request page
+				 - Fix Bugs for user dashboard (username keep on changing to root)
+				 - Added User Handed Page
+				 - Fix Pigination in Dashboard
+				 - Added Profile Page for User
+------------------------------------------------------------------------------------------------------
+____________________________________________ FOR TESTING _____________________________________________
+
+
+
+
+				 
+
+
+
+
+
+
+
+
+
+
