@@ -1,0 +1,4 @@
+Instructions
+1. Import the database file to your phpmyadmin [Very Important]
+2. put the project folder in your htdocs folder (C:\xampp\htdocs\Blood Bank Management System)
+3. Run the project in your browser (http://localhost/Blood Bank Management System/Home/HomePage.php)

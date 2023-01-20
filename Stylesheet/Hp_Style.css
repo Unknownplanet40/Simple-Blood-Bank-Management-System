@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Rowdies&display=swop");
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  font-family: "Sofia Sans", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/hand.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding: 15px 15px;
+  background-image: linear-gradient(#24252a, black);
+}
+
+.logo {
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+span {
+  color: #f9004d;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover {
+  color: #f9004d;
+  transition: 0.4s;
+}
+
+.btn {
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform 0.4s;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+}
+
+h1 {
+  color: black;
+  margin: 5px 0;
+  margin-left: 50rem;
+  font-size: 75px;
+}
+
+.tag {
+  color: black;
+  font-size: 25px;
+  margin-left: 50rem;
+  margin-bottom: 25px;
+}
+
+h3 {
+  color: black;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+h4 {
+  color: black;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.wel {
+  color: black;
+  margin-left: 50rem;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.about {
+  width: 100%;
+  padding: 100px 0px;
+  background-color: #b21423;
+}
+
+.about img {
+  height: auto;
+  width: 430px;
+}
+
+.about-text {
+  width: 550px;
+}
+
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text h2 {
+  color: white;
+  font-size: 50px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.about-text h5 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+.about-text p {
+  color: black;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+button {
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+
+.service {
+  background-color: whitesmoke;
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+}
+
+.title h2 {
+  font-family: "Rowdies", cursive;
+  color: darkred;
+  font-size: 60px;
+  width: 1130px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.card {
+  height: 365px;
+  width: 335px;
+  padding: 20px 35px;
+  background: gray;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card i {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+  color: #f9004d;
+}
+
+h5 {
+  color: white;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.graph p {
+  color: whitesmoke;
+  font-size: 16px;
+  margin: 20px 0 25px 0;
+  text-align: justify;
+}
+
+.card .button {
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 15px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.pra p {
+  color: whitesmoke;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.card .button:hover {
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+
+.contacts {
+  background: #191919;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #101010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Conbox table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  color: white;
+  font-size: 15px;
+}
+
+.Conbox table td:nth-child(1) {
+  padding-right: 15px;
+}
+
+.Conbox table td:nth-child(3) {
+  padding-left: 15px;
+}
+
+.Conbox table td a {
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.Conbox table td a:hover {
+  color: #f9004d;
+}
+
+.end {
+  position: absolute;
+  color: #f9004d;
+  bottom: 35px;
+  font-size: 14px;
+}

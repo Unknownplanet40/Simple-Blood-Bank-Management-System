@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.area {
+  background: #f65437;
+  background: linear-gradient(to right, #f65437, #ce1a34);
+  width: 100%;
+  height: 120vh;
+}
+
+.circles {
+  position: absolute;
+  top: 10px;
+  left: 10;
+  width: 100%;
+  height: 118%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+form {
+  height: fit-content;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+}
+
+form * {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+form h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+form h2 {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+table {
+  width: fit-content;
+}
+
+table tr {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+table tr:nth-child(1) {
+  margin-top: 20px;
+}
+
+table tr:nth-child(2) {
+  margin-top: -20px;
+}
+
+table tr:nth-child(3) {
+  margin-top: -20px;
+}
+
+tr:nth-child(4) {
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+
+table tr td {
+  padding: 10px;
+}
+select option {
+  background-color: #000;
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+}
+.reglink {
+  /*sign up link*/
+  margin-top: 20px;
+}
+.social {
+  margin-top: -45px;
+  margin-left: -28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.social div {
+  width: fit-content;
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover a {
+  background-color: rgba(255, 255, 255, 0.47);
+  border-radius: 3px;
+  color: #080710;
+}
+.social a {
+  padding: 5px;
+  display: inline-block;
+  margin: 10px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+form p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+form p a {
+  color: #e5e5e5;
+  text-decoration: none;
+  padding: 3px;
+}
+
+form p a:hover {
+  color: #1845ad;
+  backdrop-filter: blur(10px);
+  border-radius: 3px;
+}

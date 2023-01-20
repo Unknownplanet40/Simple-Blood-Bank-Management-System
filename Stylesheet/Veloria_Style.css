@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  line-height: 1.5;
+  font-family: "Lora", serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(../images/Background.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 0%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  text-align: right;
+  flex: 1;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.logo {
+  padding: 10px;
+  padding-left: 30px;
+  font-size: 20px;
+  color: white;
+}
+
+.nav-links ul li a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: grey;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.Text-box {
+  width: 90%;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.Text-box h1 {
+  font-size: 50px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: grey;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+
+/*----About----*/
+#About {
+  background-color: white;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#About h2 {
+  font-size: 40px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.left img {
+  border-radius: 30%;
+  width: 400px;
+  height: 350px;
+  vertical-align: middle;
+  box-shadow: rgba(0, 0, 0, 0.1);
+  transition: 1s;
+}
+
+.left:hover {
+  transform: scale(1.3);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5 rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/*----education section----*/
+#Education {
+  background-color: whitesmoke;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#Education h2 {
+  font-size: 40px;
+}
+
+.Educ {
+  padding: 20px;
+}
+
+.Tertiary {
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 50px;
+}
+
+.Secondary {
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 50px;
+}
+
+.Primary {
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 50px;
+}
+
+/*----Footer----*/
+.footer {
+  background-color: black;
+  text-align: center;
+}
+
+.footer h3 {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Trebuchet MS";
+  color: whitesmoke;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 10px;
+  font-family: verdana;
+  color: whitesmoke;
+}

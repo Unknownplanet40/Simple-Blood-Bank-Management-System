@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: Sans-serif;
+  overflow: hidden;
+}
+
+.dashboard {
+  height: 100vh;
+  display: flex;
+}
+.left {
+  height: 100%;
+  display: flex;
+}
+
+.wrapper {
+  padding: 0 25px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Logo-Image > img {
+  width: 100%;
+  margin: 20px -10px 10px 0;
+  border-radius: 10px;
+}
+
+.Logo-Image p {
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+  
+}
+
+.wrapper2 {
+  padding: 0 25px;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.folder-icons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+.folder-icons:hover {
+  background-color: #f5576c;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+}
+.Pressed-folder-icons {
+  background-color: #f5576c;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+}
+.icon-name {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.right-side {
+  background-image: linear-gradient(120deg, #f65437 0%, #ce1a34 100%);
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+}
+.con-size {
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.table-responsive {
+  width: 100%;
+}
+
+.con-size form {
+  padding: 10px;
+  width: 50%;
+}
+
+.layout {
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.tabs-title {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #fff;
+}

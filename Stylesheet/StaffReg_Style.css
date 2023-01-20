@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+
+form {
+  height: fit-content;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 52%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 35px 35px;
+}
+
+form * {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+form h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+table {
+  width: fit-content;
+}
+
+table tr {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+table tr:nth-child(1) {
+  margin-top: 20px;
+}
+
+table tr:nth-child(2) {
+  margin-top: -20px;
+}
+
+table tr:nth-child(3) {
+  margin-top: -20px;
+}
+
+tr:nth-child(4) {
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+
+table tr td {
+  padding: 10px;
+}
+select option {
+  background-color: #000;
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+}
+.reglink {
+  /*sign up link*/
+  margin-top: 20px;
+}
+.social {
+  margin-top: -30px;
+  margin-left: -30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.social div {
+  width: fit-content;
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover a {
+  background-color: rgba(255, 255, 255, 0.47);
+  border-radius: 3px;
+  color: #080710;
+}
+.social a {
+  padding: 5px;
+  display: inline-block;
+  margin: 10px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+form p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+form p a {
+  color: #e5e5e5;
+  text-decoration: none;
+  padding: 3px;
+}
+
+form p a:hover {
+  color: #1845ad;
+  backdrop-filter: blur(10px);
+  border-radius: 3px;
+}

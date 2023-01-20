@@ -1,0 +1,35 @@
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+body {
+    background-image: url('https://img.freepik.com/premium-vector/cute-happy-healthy-smiling-blood-drop-character_92289-663.jpg?w=740');
+    
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px; 
+    padding-top: 5px;
+}
+
+div {
+    margin: auto;
+    height: 590px;
+    width: 1000px;
+    border: 5px solid #FA8072;
+}
+
+div.a {
+    word-wrap: normal;
+}
+
+div.b {
+    word-wrap: break-word;
+}

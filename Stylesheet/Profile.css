@@ -1,0 +1,11 @@
+.box1 {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 10px;
+}
+.plabel {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}

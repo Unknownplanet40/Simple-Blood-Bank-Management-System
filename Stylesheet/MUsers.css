@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+section{
+    padding: 20px;
+    margin-top: 50px;
+}
+
+table th{
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
