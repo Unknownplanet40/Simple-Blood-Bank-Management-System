@@ -27,13 +27,9 @@
                 And my father inspires me with his hard work, honesty and diligence. He is very loving and caring and
                 binds the entire family together. I thank God and am very grateful for the most precious gift of family
                 because family members give unconditional love, care and affection. I am what I am because of my family.
-                My family completes me.</p>
-            <div>
-
-            </div>
-
+                My family completes me.
+            </p>
         </div>
-
     </div>
 
 </body>

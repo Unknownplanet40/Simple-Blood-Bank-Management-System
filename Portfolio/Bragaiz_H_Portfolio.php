@@ -30,14 +30,8 @@
                 dulled by staying indoors too close to the television and refrigerator. Unlike both swimming and
                 running, cyclists can enjoy a conversation with a fellow rider. My other hobbies is core work and out
                 leg work out and watching movies hangout with friends and playing game if have time.</p>
-            <div>
-
-            </div>
-
         </div>
-
     </div>
-
 </body>
 
 </html>

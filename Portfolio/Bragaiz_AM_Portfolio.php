@@ -28,12 +28,9 @@
                 jollibee,BBQ,Menudo,Caldereta and more. My favorite color is black,red,yellow,green and blue. And i hate
                 toxic people. Just stay positive and stay motivated anytime.</p>
             <div>
-
-
             </div>
-
         </div>
-
+    </div>
 </body>
 
 </html>
