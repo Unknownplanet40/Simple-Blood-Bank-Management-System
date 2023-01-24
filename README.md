@@ -1,5 +1,5 @@
 # Blood Bank Management System <sup>`v0.1`</sup>
-Simple BBMS Project in DCIT 24A for 1st Semester of Second Year
+Simple BBM System Project in DCIT 24A for 1st Semester of Second Year (2022 - 2023)
 
 - Authors 
 	- Ryan James V. Capadocia
@@ -9,11 +9,22 @@ Simple BBMS Project in DCIT 24A for 1st Semester of Second Year
 	  - Jomari Bautista
 	  - Julian Bragaiz 
 	  - Cielo Besonia
-  
+
 ```
 Created on December 5, 2022 at 10:30:20 PM
 IDE Visual Studio Code, Sublime Text Editor
 ```
+
+## Instruction
+To Run This Web Application you need to download the files <br>
+Extract the file after downloading, then open the downloaded folder and copy all the files and folder <br>
+Once all the files and folders have been copied, go to the Xampp folder `C:\xampp` and locate the htdoc folder. <br>
+Create a new folder and name it `Blood Bank Management` <br>
+Once the folder has been created, open it and paste the file that you copied earlier into the newly created folder <br>
+After that, open the XAMPP application and run Apache and MySQL. Then, go to Chrome and type in `localhost/phpmyadmin` and press Enter.
+Then, go to the Import tab and click "**Choose File**". After that, find the folder, go to the Database, select `BBMS Database.sql`, and click "**OK**".
+After that, scroll down and click "**Import**". Then, open a new tab and type `localhost/Blood Bank Management/Home/Homepage.php` and you're good to go. Enjoy!
+  
 -----
 ### Preview
 <div align="center"
