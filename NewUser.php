@@ -31,7 +31,12 @@ function Admin()
         $result = mysqli_query($conn, $sql);
         $row = mysqli_fetch_assoc($result);
 
-        if ($row['username'] == $Uname) {
+        if (empty($name) || empty($Uname) || empty($Pword) || empty($CPword)) {
+            $_SESSION['message'] = "You have left some fields empty";
+            $_SESSION['icon'] = "warning";
+            $_SESSION['isTrue'] = true;
+            header("Location: " . $_SERVER['HTTP_REFERER']);
+        } elseif ($row['username'] == $Uname) {
             $_SESSION['message'] = "The Username you entered already exists. Please choose a different one";
             $_SESSION['icon'] = "warning";
             $_SESSION['isTrue'] = true;
@@ -77,7 +82,12 @@ function Staff()
         $result = mysqli_query($conn, $sql);
         $row = mysqli_fetch_assoc($result);
 
-        if ($row['username'] == $Uname) {
+        if (empty($name) || empty($Uname) || empty($Pword) || empty($CPword)) {
+            $_SESSION['message'] = "You have left some fields empty";
+            $_SESSION['icon'] = "warning";
+            $_SESSION['isTrue'] = true;
+            header("Location: " . $_SERVER['HTTP_REFERER']);
+        } elseif ($row['username'] == $Uname) {
             $_SESSION['message'] = "The Username you entered already exists. Please choose a different one";
             $_SESSION['icon'] = "warning";
             $_SESSION['isTrue'] = true;
@@ -127,7 +137,12 @@ function User()
         $result = mysqli_query($conn, $sql);
         $row = mysqli_fetch_assoc($result);
 
-        if ($row['username'] == $Uname) {
+        if (empty($name) || empty($Uname) || empty($Pword) || empty($CPword) || empty($email) || empty($phone) || empty($address) || empty($blood)) {
+            $_SESSION['message'] = "You have left some fields empty";
+            $_SESSION['icon'] = "warning";
+            $_SESSION['isTrue'] = true;
+            header("Location: " . $_SERVER['HTTP_REFERER']);
+        } elseif ($row['username'] == $Uname) {
             $_SESSION['message'] = "The Username you entered already exists. Please choose a different one";
             $_SESSION['icon'] = "warning";
             $_SESSION['isTrue'] = true;

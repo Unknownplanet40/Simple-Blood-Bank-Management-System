@@ -28,14 +28,14 @@ if ($status == 2) {
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>STAFF - <?php echo $name ?></title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="../Blood Bank Management/Stylesheet/MUsers.css">
-    <link rel="stylesheet" href="../Blood Bank Management/Stylesheet/MUsers_aniBG.css">
+    <link rel="stylesheet" href="./Stylesheet/MUsers.css">
+    <link rel="stylesheet" href="./Stylesheet/MUsers_aniBG.css">
     <link rel="shortcut icon" href="https://img.icons8.com/fluency/512/doctors-bag.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="../Blood Bank Management/Scripts/S_MUsers_Script.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./Stylesheet/bootstrap.css">
+    <script src="./Scripts/jquery.js"></script>
+    <script src="./Scripts/S_MUsers_Script.js"></script>
+    <script src="./Scripts/sweetalert2.js"></script>
 </head>
 
 <body>
@@ -173,17 +173,21 @@ if ($status == 2) {
                             # for status
                             if ($row['isApproved'] == 1) {
                                 $isApproved = "Approved";
+                                $tcolorS = "text-success";
                             } else if ($row['isApproved'] == 2) {
-                                $isApproved = "Declined";
+                                $isApproved = "Denied";
+                                $tcolorS = "text-danger";
                             } else {
                                 $isApproved = "Pending";
+                                $tcolorS = "text-warning";
                             }
 
-                            # for login
                             if ($row['is_login'] == 1) {
                                 $Login = "Signed In";
+                                $tcolorL = "text-success";
                             } else {
                                 $Login = "Signed Out";
+                                $tcolorL = "text-danger";
                             }
 
                             # for password show/hide
@@ -200,8 +204,8 @@ if ($status == 2) {
                                         <td class='text-truncate' style='max-width: 150px; min-width: 100px'>" . convert($row['password'], $enable) . "</td>
                                         <td style='display: none;'>" . $row['password'] . "</td>
                                         <td>" . $status . "</td>
-                                        <td>" . $isApproved . "</td>
-                                        <td>" . $Login . "</td>
+                                        <td class='$tcolorS'>" . $isApproved . "</td>
+                                        <td class='$tcolorL'>" . $Login . "</td>
                                         <td>
                                         <div class='d-flex justify-content-around'>
                                         <button type='button' class='btn btn-primary me-1 updateBTN text-light'><i class='bi bi-person-gear'></i></button>
@@ -233,6 +237,6 @@ if ($status == 2) {
         </section>
     </main>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./Scripts/BT_Bundle.js"></script>
 
 </html>

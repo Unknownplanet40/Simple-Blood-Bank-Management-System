@@ -27,13 +27,13 @@ if ($status == 3) {
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Dashboard</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='../Blood Bank Management/Stylesheet/Dashboard.css'>
-    <link rel='stylesheet' href='../Blood Bank Management/Stylesheet/Dashboard_aniBG.css'>
+    <link rel='stylesheet' href='./Stylesheet/Dashboard.css'>
+    <link rel='stylesheet' href='./Stylesheet/Dashboard_aniBG.css'>
     <link rel="shortcut icon" href="https://img.icons8.com/fluency/512/doctors-bag.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src='../Blood Bank Management/Scripts/admin_Script.js'></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./Stylesheet/bootstrap.css">
+    <script src="./Scripts/jquery.js"></script>
+    <script src='./Scripts/admin_Script.js'></script>
+    <script src="./Scripts/sweetalert2.js"></script>
 </head>
 
 <body>
@@ -44,7 +44,7 @@ if ($status == 3) {
                 <div class="wrapper2">
                     <div class="Logo-Image">
                         <!--<img src="https://via.placeholder.com/321x124" />-->
-                        <img src="../Blood Bank Management/images/Tagline.png" />
+                        <img src="./images/Tagline.png" />
                         <p style="text-transform: uppercase;">
                             <?php
                             echo $name;
@@ -202,6 +202,6 @@ if ($status == 3) {
         </div>
     </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./Scripts/BT_Bundle.js"></script>
 
 </html>

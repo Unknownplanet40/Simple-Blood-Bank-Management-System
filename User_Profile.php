@@ -44,15 +44,15 @@ if ($status == 3) {
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Dashboard</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='../Blood Bank Management/Stylesheet/Dashboard.css'>
-    <link rel='stylesheet' href='../Blood Bank Management/Stylesheet/Dashboard_aniBG.css'>
-    <link rel='stylesheet' href='../Blood Bank Management/Stylesheet/Profile.css'>
+    <link rel='stylesheet' href='./Stylesheet/Dashboard.css'>
+    <link rel='stylesheet' href='./Stylesheet/Dashboard_aniBG.css'>
+    <link rel='stylesheet' href='./Stylesheet/Profile.css'>
     <link rel="shortcut icon" href="https://img.icons8.com/fluency/512/doctors-bag.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="../Blood Bank Management/Scripts/Profile_Script.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./Stylesheet/bootstrap.css">
+    <script src="./Scripts/jquery.js"></script>
+    <script src="./Scripts/Profile_Script.js"></script>
+    <script src="./Scripts/sweetalert2.js"></script>
 </head>
 
 <body>
@@ -63,7 +63,7 @@ if ($status == 3) {
                 <div class="wrapper2">
                     <div class="Logo-Image">
                         <!--<img src="https://via.placeholder.com/321x124" />-->
-                        <img src="../Blood Bank Management/images/Tagline.png" />
+                        <img src="./images/Tagline.png" />
                         <p style="text-transform: uppercase;">
                             <?php
                             echo $name;
@@ -109,42 +109,42 @@ if ($status == 3) {
                                 <div class="col-12">
                                     <input hidden type="text" class="form-control" id="pid" value="<?php echo $pid; ?>">
                                     <label for="pname" class="form-label plabel">Name</label>
-                                    <input disabled type="text" class="form-control" id="pname"
+                                    <input readonly type="text" class="form-control" id="pname"
                                         value="<?php echo $pname; ?>">
                                 </div>
                                 <div class="col-12">
                                     <label for="pemail" class="form-label plabel">Email</label>
-                                    <input disabled type="email" class="form-control" id="pemail"
+                                    <input readonly type="email" class="form-control" id="pemail"
                                         value="<?php echo $pemail; ?>">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="pusername" class="form-label plabel">UserName</label>
-                                    <input disabled type="text" class="form-control" id="pusername"
+                                    <input readonly type="text" class="form-control" id="pusername"
                                         value="<?php echo $puname; ?>">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="ppassword" class="form-label plabel">Password</label>
-                                    <input disabled type="text" class="form-control" id="ppassword"
+                                    <input readonly type="password" class="form-control" id="ppassword"
                                         value="<?php echo $ppword; ?>">
                                 </div>
                                 <div class="col-6">
                                     <label for="paddress" class="form-label plabel">Address</label>
-                                    <input type="text" class="form-control" id="paddress"
+                                    <input readonly type="text" class="form-control" id="paddress"
                                         value="<?php echo $paddress; ?>">
                                 </div>
                                 <div class="col-md-4">
                                     <label for="pphone" class="form-label plabel">Phone</label>
-                                    <input disabled type="tel" class="form-control" id="pphone"
+                                    <input readonly type="tel" class="form-control" id="pphone"
                                         value="<?php echo $pphone; ?>">
                                 </div>
                                 <div class="col-md-2">
                                     <label for="blood" class="form-label plabel">Blood type</label>
-                                    <input disabled type="text" class="form-control" id="pblood"
+                                    <input readonly type="text" class="form-control" id="pblood"
                                         value="<?php echo $pblood; ?>">
                                 </div>
                                 <div class="col-10">
                                     <button type="button" class="btn btn-primary Probtn" data-bs-toggle='modal'
-                                        data-bs-target='#UpUserAct'>Sign in</button>
+                                        data-bs-target='#UpUserAct'>Update</button>
                                 </div>
                                 <div class="col-2">
                                     <button class='btn btn-danger me-1'><a class='text-light'
@@ -158,6 +158,6 @@ if ($status == 3) {
         </div>
 </body>
 <!-- This script is for the modal if removed the modal will not work -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./Scripts/BT_Bundle.js"></script>
 
 </html>

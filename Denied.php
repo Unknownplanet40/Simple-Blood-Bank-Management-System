@@ -5,7 +5,7 @@ session_start();
 if (isset($_GET['user_id'])) {
     $userID = $_GET['user_id'];
 
-    $sql = "UPDATE request SET isapproved = '2' WHERE `user_id` = '$userID'";
+    $sql = "UPDATE `request` SET `isapproved` = '2' WHERE `user_id` = '$userID'";
     $result = mysqli_query($conn, $sql);
     if ($result) {
         header("Location: " . $_SERVER['HTTP_REFERER']);

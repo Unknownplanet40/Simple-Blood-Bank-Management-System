@@ -20,7 +20,11 @@ if (isset($_POST['submit'])) {
         $_SESSION['icon'] = "info";
         $_SESSION['isTrue'] = true;
         header("Location: " . $_SERVER['HTTP_REFERER']);
-
+    } elseif ($blood == "unknown") {
+        $_SESSION['message'] = "Please select a blood type from the dropdown menu before submitting";
+        $_SESSION['icon'] = "info";
+        $_SESSION['isTrue'] = true;
+        header("Location: " . $_SERVER['HTTP_REFERER']);
     } else {
         $sql = "INSERT INTO `donation`(`name`, `email`, `blood_type`, `address`, `phone`, `who_create`, `blood_unit`, `datecreated`) VALUES ('$name','$email','$blood','$address','$phone', '$uname', '4050', '$date')";
         $result = mysqli_query($conn, $sql);
@@ -84,21 +88,21 @@ if (isset($_POST['submit'])) {
             }
 
             /* if ($conn->multi_query($sql) === TRUE) {
-                $_SESSION['message'] = "Account Added Successfully";
-                $_SESSION['icon'] = "success";
-                $_SESSION['isTrue'] = true;
-                header("Location: " . $_SERVER['HTTP_REFERER']);
+            $_SESSION['message'] = "Account Added Successfully";
+            $_SESSION['icon'] = "success";
+            $_SESSION['isTrue'] = true;
+            header("Location: " . $_SERVER['HTTP_REFERER']);
             } else {
-                $result = mysqli_query($conn, $sql);
-                if ($result) {
-                    header("Location: " . $_SERVER['HTTP_REFERER']);
-                } else {
-                    $_SESSION['message'] = "There was an error Adding your Data";
-                    $_SESSION['icon'] = "error";
-                    $_SESSION['isTrue'] = true;
-                    header("Location: " . $_SERVER['HTTP_REFERER']);
-                    //echo '<script>alert("Blood type not updated")</script>';
-                }
+            $result = mysqli_query($conn, $sql);
+            if ($result) {
+            header("Location: " . $_SERVER['HTTP_REFERER']);
+            } else {
+            $_SESSION['message'] = "There was an error Adding your Data";
+            $_SESSION['icon'] = "error";
+            $_SESSION['isTrue'] = true;
+            header("Location: " . $_SERVER['HTTP_REFERER']);
+            //echo '<script>alert("Blood type not updated")</script>';
+            }
             } */
         } else {
             $_SESSION['message'] = "Account not Added ";

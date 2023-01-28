@@ -17,7 +17,7 @@ try {
     # Having some issues with this one, mySQL keeps shutting down when I try to connect to it.
     # nevermind, I'll just use the default XAMPP MySQL Connection
     
-    // $conn = mysqli_connect('localhost', 'administrator', 'pwordfordb_bbm.2022', 'bloodbank_management');
+    //$conn = mysqli_connect('localhost', 'administrator', 'pwordfordb_bbm.2022', 'bloodbank_management');
 
 
 } catch (\Throwable $th) {

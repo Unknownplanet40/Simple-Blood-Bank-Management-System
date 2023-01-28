@@ -55,9 +55,8 @@ if (isset($_POST['submit'])) {
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="../Blood Bank Management/Stylesheet/register_Style.css">
+    <link href="./Stylesheet/bt_Register.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Stylesheet/register_Style.css">
     <script src='login.js'></script>
 </head>
 
@@ -82,7 +81,7 @@ if (isset($_POST['submit'])) {
                     <div class="social ">
                         <div>
                             <button type="button" class="btn-close" aria-label="Close"
-                                onclick="location.href = '../Blood Bank Management/Home/HomePage.php'"></button>
+                                onclick="location.href = './Home/HomePage.php'"></button>
                         </div>
                     </div>
                     <h3>Registration</h3>

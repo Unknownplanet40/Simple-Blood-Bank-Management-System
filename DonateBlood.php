@@ -22,7 +22,12 @@ if (isset($_POST['Donate'])) {
     $unit = $row['blood_unit'];
 
 
-    if ($Blood_Amount > $unit) {
+    if (empty($Blood_Amount)) {
+        $_SESSION['message'] = "You must enter a value to donate blood";
+        $_SESSION['icon'] = "warning";
+        $_SESSION['isTrue'] = true;
+        header("Location: " . $_SERVER['HTTP_REFERER']);
+    } elseif ($Blood_Amount > $unit){
         $_SESSION['message'] = "For your own safety, you can no longer donate blood";
         $_SESSION['icon'] = "info";
         $_SESSION['isTrue'] = true;

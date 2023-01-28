@@ -29,13 +29,13 @@ include 'Popup_Alert.php';
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>ADMIN - <?php echo $name; ?></title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='../Blood Bank Management/Stylesheet/Dashboard.css'>
-    <link rel='stylesheet' href='../Blood Bank Management/Stylesheet/Dashboard_aniBG.css'>
+    <link rel='stylesheet' href='./Stylesheet/Dashboard.css'>
+    <link rel='stylesheet' href='./Stylesheet/Dashboard_aniBG.css'>
     <link rel="shortcut icon" href="https://img.icons8.com/fluency/512/doctors-bag.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./Stylesheet/bootstrap.css">
+    <script src="./Scripts/jquery.js"></script>
+    <script src="./Scripts/sweetalert2.js"></script>
 </head>
 
 <body>
@@ -46,7 +46,7 @@ include 'Popup_Alert.php';
                 <div class="wrapper2">
                     <div class="Logo-Image">
                         <!--<img src="https://via.placeholder.com/321x124" />-->
-                        <img src="../Blood Bank Management/images/Tagline.png" />
+                        <img src="./images/Tagline.png" />
                         <p style="text-transform: uppercase;">
                             <?php
                             echo $name;
@@ -160,7 +160,11 @@ include 'Popup_Alert.php';
                                         $result = mysqli_query($conn, $sql);
                                     }
                                     while ($row = mysqli_fetch_assoc($result)) {
-                                        $requested = $row['requested'] / 1000;
+                                        if (!empty($row['requested'])) {
+                                            $requested = $row['requested'] / 1000;
+                                        } else {
+                                            $requested = 0;
+                                        }
 
                                         if ($row['isapproved'] == 0) {
                                             $status = "Pending";
@@ -216,6 +220,6 @@ include 'Popup_Alert.php';
             </div>
         </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./Scripts/BT_Bundle.js"></script>
 
 </html>

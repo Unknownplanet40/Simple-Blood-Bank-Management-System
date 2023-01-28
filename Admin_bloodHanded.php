@@ -27,12 +27,12 @@ include 'Popup_Alert.php';
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>ADMIN - <?php echo $name; ?></title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='../Blood Bank Management/Stylesheet/Dashboard.css'>
-    <link rel='stylesheet' href='../Blood Bank Management/Stylesheet/Dashboard_aniBG.css'>
+    <link rel='stylesheet' href='./Stylesheet/Dashboard.css'>
+    <link rel='stylesheet' href='./Stylesheet/Dashboard_aniBG.css'>
     <link rel="shortcut icon" href="https://img.icons8.com/fluency/512/doctors-bag.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./Stylesheet/bootstrap.css">
+    <script src="./Scripts/jquery.js"></script>
+    <script src="./Scripts/sweetalert2.js"></script>
 </head>
 
 <body>
@@ -43,7 +43,7 @@ include 'Popup_Alert.php';
                 <div class="wrapper2">
                     <div class="Logo-Image">
                         <!--<img src="https://via.placeholder.com/321x124" />-->
-                        <img src="../Blood Bank Management/images/Tagline.png" />
+                        <img src="./images/Tagline.png" />
                         <p style="text-transform: uppercase;">
                             <?php
                             echo $name;
@@ -121,10 +121,10 @@ include 'Popup_Alert.php';
                                 $fromSearch = false;
                                 if (isset($_POST['submit'])) {
                                     $search = $_POST['search'];
-                                    $sql = "SELECT * FROM `request` WHERE `name` LIKE '%$search%' OR `email` LIKE '%$search%' OR `phone` LIKE '%$search%' OR `Address` LIKE '%$search%' OR `blood_type` LIKE '%$search%' AND isapproved = '1'";
+                                    $sql = "SELECT * FROM `request` WHERE `name` LIKE '%$search%' OR `email` LIKE '%$search%' OR `phone` LIKE '%$search%' OR `Address` LIKE '%$search%' OR `blood_type` LIKE '%$search%' AND `isapproved` = '1'";
                                     $fromSearch = true;
                                 } else {
-                                    $sql = "SELECT * FROM `request` WHERE isapproved = '1'";
+                                    $sql = "SELECT * FROM `request` WHERE `isapproved` = '1'";
                                 }
                                 $result = mysqli_query($conn, $sql);
                                 if (mysqli_num_rows($result) > 0) {
@@ -199,6 +199,6 @@ include 'Popup_Alert.php';
             </div>
         </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./Scripts/BT_Bundle.js"></script>
 
 </html>

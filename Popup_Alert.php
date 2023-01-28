@@ -34,7 +34,7 @@ function NewAlertBox()
                     $title = "Oops... We\'re sorry! <hr>";
                     break;
             }
-
+            # with timer
             /* return "<script>
             Swal.fire({
             icon: '". $_SESSION['icon'] ."',

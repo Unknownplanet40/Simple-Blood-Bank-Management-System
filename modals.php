@@ -254,11 +254,9 @@ function totalDonation()
     if ($num_rows == 0) {
         return 'No Donations Yet!';
     } else {
-        # 1 gallon = 3.785 liters
         # 1 liter = 1000 ml
         if ($num_rows >= 1000) {
             $num_rows = $num_rows / 1000;
-
             return $num_rows . ' Liters';
         } else {
             return $num_rows . ' Milliliters';
@@ -314,7 +312,7 @@ function totalRequest()
                     </div>
                     <div class="form-floating">
                         <select class="form-select" name="blood" required>
-                            <option selected disabled hidden>Select your Blood Type Here</option>
+                            <option selected hidden value="unknown">Select your Blood Type Here</option>
                             <option value="A+">A+</option>
                             <option value="A-">A-</option>
                             <option value="B+">B+</option>
@@ -371,7 +369,7 @@ function totalRequest()
                     </div>
                     <div class="form-floating">
                         <select class="form-select" name="blood" id="update_blood" required>
-                            <option selected disabled hidden>Select your Blood Type Here</option>
+                            <option selected hidden value="unknown">Select your Blood Type Here</option>
                             <option value="A+">A+</option>
                             <option value="A-">A-</option>
                             <option value="B+">B+</option>

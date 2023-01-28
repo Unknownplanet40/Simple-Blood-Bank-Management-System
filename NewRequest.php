@@ -21,15 +21,26 @@ if (isset($_POST['submit'])) {
         $_SESSION['isTrue'] = true;
         header("Location: " . $_SERVER['HTTP_REFERER']);
     } else {
-        $sql = "INSERT INTO `request`(`user_id`, `name`, `email`, `blood_type`, `phone`, `Address`, `isapproved`, `requested`, `cby`, `again`) VALUES (NULL,'$name','$email','$blood','$phone','$address','0','$unit', '$user', '0')";
-        $result = mysqli_query($conn, $sql);
-        if ($result) {
+
+        if (empty($blood) || empty($name) || empty($email) || empty($address) || empty($phone) || empty($unit)) {
+            $_SESSION['message'] = "You cannot leave any field empty";
+            $_SESSION['icon'] = "warning";
+            $_SESSION['isTrue'] = true;
             header("Location: " . $_SERVER['HTTP_REFERER']);
-        } else {
-            $_SESSION['message'] = "We are sorry, but we are unable to process your request at this time. Please try again later.";
-            $_SESSION['icon'] = "error";
-            $_session['isTrue'] = true;
-            header("Location: " . $_SERVER['HTTP_REFERER']);
+        } else{
+            $sql = "INSERT INTO `request`(`user_id`, `name`, `email`, `blood_type`, `phone`, `Address`, `isapproved`, `requested`, `cby`, `again`) VALUES (NULL,'$name','$email','$blood','$phone','$address','0','$unit', '$user', '0')";
+            $result = mysqli_query($conn, $sql);
+            if ($result) {
+                $_SESSION['message'] = "Your request has been submitted successfully";
+                $_SESSION['icon'] = "success";
+                $_SESSION['isTrue'] = true;
+                header("Location: " . $_SERVER['HTTP_REFERER']);
+            } else {
+                $_SESSION['message'] = "We are sorry, but we are unable to process your request at this time. Please try again later.";
+                $_SESSION['icon'] = "error";
+                $_session['isTrue'] = true;
+                header("Location: " . $_SERVER['HTTP_REFERER']);
+            }
         }
     }
 }

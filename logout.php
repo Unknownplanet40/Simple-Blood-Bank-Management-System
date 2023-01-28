@@ -13,6 +13,7 @@ if (mysqli_num_rows($result) > 0) {
     if ($result) {
         session_destroy();
         session_unset();
+        mysqli_close($conn);
         header("Location: login.php");
     } else {
         $_SESSION['message'] = "we are facing some technical issue. Please try again later.";

@@ -1,6 +1,12 @@
 <?php
 @include 'config.php';
 session_start();
+
+# incase user forgot to input blood type before updating this will refresh
+# the page to update the blood type
+$refresh0 = false;
+$refresh1 = false;
+
 //get id from last page
 if (isset($_POST['update'])) {
     $id = $_POST['id'];
@@ -27,25 +33,31 @@ if (isset($_POST['update'])) {
             $_SESSION['isTrue'] = true;
             header("Location: " . $_SERVER['HTTP_REFERER']);
         }
-    } else {
+    }else {
         updateOldBlood($old_blood);
         updateNewBlood($blood);
-        $sql = "UPDATE `donation` SET `name` = '$name', `email` = '$email', `blood_type` = '$blood', `address` = '$address', `phone` = '$phone' WHERE `user_id` = '$id';";
-        $result = mysqli_query($conn, $sql);
-        if ($result) {
-            header("Location: " . $_SERVER['HTTP_REFERER']);
+
+        if ($refresh0 && $refresh1) {
+            //refresh page
+            header("Refresh: 0; url=DonorUpdate.php");
         } else {
-            $_SESSION['message'] = "Data not updated due to an error in the database connection";
-            $_SESSION['icon'] = "error";
-            $_SESSION['isTrue'] = true;
-            header("Location: " . $_SERVER['HTTP_REFERER']);
+            $sql = "UPDATE `donation` SET `name` = '$name', `email` = '$email', `blood_type` = '$blood', `address` = '$address', `phone` = '$phone' WHERE `user_id` = '$id';";
+            $result = mysqli_query($conn, $sql);
+            if ($result) {
+                header("Location: " . $_SERVER['HTTP_REFERER']);
+            } else {
+                $_SESSION['message'] = "Data not updated due to an error in the database connection";
+                $_SESSION['icon'] = "error";
+                $_SESSION['isTrue'] = true;
+                header("Location: " . $_SERVER['HTTP_REFERER']);
+            }
         }
     }
 }
 function updateOldBlood($old_blood)
 {
     include('config.php');
-
+    $disabled = false;
     switch ($old_blood) {
         case 'A+':
             $sql = "UPDATE `blood_types` SET `A_plus` = `A_plus` - 1 WHERE `blood_id` = 1";
@@ -71,13 +83,21 @@ function updateOldBlood($old_blood)
         case 'O-':
             $sql = "UPDATE `blood_types` SET `O_minus` = `O_minus` - 1 WHERE `blood_id` = 1";
             break;
+        default:
+            $disabled = true;
+            break;  
     }
-    $result = mysqli_query($conn, $sql);
+    if (!$disabled){
+        $result = mysqli_query($conn, $sql);
+    } else {
+        $refresh0 = true;
+    }
 }
 
 function updateNewBlood($new_blood)
 {
     include('config.php');
+    $disabled = false;
     switch ($new_blood) {
         case 'A+':
             $sql = "UPDATE `blood_types` SET `A_plus` = `A_plus` + 1 WHERE `blood_id` = 1";
@@ -103,7 +123,16 @@ function updateNewBlood($new_blood)
         case 'O-':
             $sql = "UPDATE `blood_types` SET `O_minus` = `O_minus` + 1 WHERE `blood_id` = 1";
             break;
+        default:
+            $disabled = true;
+            break;
     }
-    $result = mysqli_query($conn, $sql);
+    if (!$disabled){
+        $result = mysqli_query($conn, $sql);
+    }else {
+        $refresh1 = true;
+    }
 }
+
+
 ?>

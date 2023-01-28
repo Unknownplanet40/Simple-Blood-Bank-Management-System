@@ -173,7 +173,7 @@ if (isset($_GET['e'])) {
         </div>
         <div class='buttons-con'>
         <div class='action-link-wrap'>
-            <a href='../Blood Bank Management/Home/HomePage.php' class='link-button' title='Home Page'>Go to Home Page</a>
+            <a href='./Home/HomePage.php' class='link-button' title='Home Page'>Go to Home Page</a>
         </div>
     </div>";
     } else if ($nahhh == 2) { # empty data passed to the page 
@@ -185,7 +185,7 @@ if (isset($_GET['e'])) {
         </div>
         <div class='buttons-con'>
         <div class='action-link-wrap'>
-            <a href='../Blood Bank Management/Home/HomePage.php' class='link-button' title='Home Page'>Go to Home Page</a>
+            <a href='./Home/HomePage.php' class='link-button' title='Home Page'>Go to Home Page</a>
         </div>
     </div>";
     } else if ($nahhh == 3) { # Not a valid user
@@ -197,7 +197,7 @@ if (isset($_GET['e'])) {
         </div>
         <div class='buttons-con'>
         <div class='action-link-wrap'>
-            <a href='../Blood Bank Management/login.php' class='link-button' title='Sign In'>Sign In Here</a>
+            <a href='./login.php' class='link-button' title='Sign In'>Sign In Here</a>
         </div>
     </div>";
     } else if ($nahhh == 4) { # Denied Account
@@ -209,7 +209,7 @@ if (isset($_GET['e'])) {
         </div>
         <div class='buttons-con'>
         <div class='action-link-wrap'>
-            <a href='../Blood Bank Management/Home/HomePage.php' class='link-button' title='Home Page'>Go to Home Page</a>
+            <a href='./Home/HomePage.php' class='link-button' title='Home Page'>Go to Home Page</a>
         </div>
     </div>";
     }else { # Default Error
@@ -221,7 +221,7 @@ if (isset($_GET['e'])) {
         </div>
         <div class='buttons-con'>
         <div class='action-link-wrap'>
-            <a href='../Blood Bank Management/Home/HomePage.php' class='link-button' title='Home Page'>Go to Home Page</a>
+            <a href='./Home/HomePage.php' class='link-button' title='Home Page'>Go to Home Page</a>
         </div>
     </div>";
     }

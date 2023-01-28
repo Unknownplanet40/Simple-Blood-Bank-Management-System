@@ -59,15 +59,15 @@ if (isset($_POST['submit'])) {
     <title>Login Page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <!-- Main style -->
-    <link rel="stylesheet" href="../Blood Bank Management/Stylesheet/login_Style.css">
+    <link rel="stylesheet" href="./Stylesheet/login_Style.css">
     <!-- For background Animation-->
-    <link rel="stylesheet" href="../Blood Bank Management/Stylesheet/login_aniBG.css">
+    <link rel="stylesheet" href="./Stylesheet/login_aniBG.css">
     <!-- Custom Libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Custom Script Libraries -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./Scripts/sweetalert2.js"></script>
     <!-- Main Script -->
-    <script src='../Blood Bank Management/Scripts/login_Script.js'></script>
+    <script src='./Scripts/login_Script.js'></script>
 </head>
 
 <body>
@@ -89,9 +89,9 @@ if (isset($_POST['submit'])) {
                 <div class="shape"></div>
                 <div class="shape"></div>
             </div>
-            <form action="" method="post">
+            <form method="post">
                 <div class="social">
-                    <div><a href="../Blood Bank Management/Home/HomePage.php">Back</a></div>
+                    <div><a href="./Home/HomePage.php">Back</a></div>
                 </div>
                 <h3>LOG IN</h3>
 

@@ -342,7 +342,7 @@ if (isset($_SESSION['current_username'])) {
         }
         ?>
         <br>
-        <a class='btn' href='../Blood Bank Management/logout.php'>BACK</a>
+        <a class='btn' href='./logout.php'>BACK</a>
     </div>
 </body>
 
