@@ -1,4 +1,4 @@
-# Blood Bank Management System <sup>`v0.1`</sup>
+# Blood Bank Management System <sup>`v0.2`</sup>
 Simple BBM System Project in DCIT 24A for 1st Semester of Second Year (2022 - 2023)
 
 - Authors 
@@ -107,3 +107,17 @@ After that, scroll down and click "**Import**". Then, open a new tab and type `l
   - [x] Fix Pigination in Dashboard
   - [x] Added Profile Page for User
 ------------------------------------------------------------------------------------------------------
+> This is my very last Fixes and Updates for this project. Thank you for viewing my project and I hope you like it.
+
+- ### January 27, 2023 
+  - [X] Fix some bugs in NewDonor Page (Submitting without selecting blood type results in an error)
+  - [X] Fix some bugs in DonorUpdate Page (Updating Empty Fields results in an error)
+  - [X] Fix some bugs in DonateBlood Page (Submitting without a value results in an error)
+  - [X] Fix Error When Requested entry is empty (Resulting Undefined Error)
+  - [X] Fix Error for empty Fields in NewRequest Page (Submitting without a value results in an error)
+  - [X] Added Color For text in tables in manage user Page
+
+- ### January 28, 2023 
+  - [X] Fix some bugs in NewUser Page (Added Catch Error for empty fields)
+  - [X] Convert some scripts and style to run offline except for the icons, fonts, and for some Images (for testing purposes)
+  - [X] change blood Bank management directory to root Directory for easy access
